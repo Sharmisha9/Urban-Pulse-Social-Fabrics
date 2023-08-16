@@ -1,0 +1,49 @@
+<div class="filters-modal">
+  <div class="example-h2">Please Select Filters</div>
+
+  <section class="example-section">
+    <h4>Select relationship word types:</h4>
+    <div *ngFor="let filter of data.filters">
+      <mat-checkbox [(ngModel)]="filter.selected">
+        {{filter.name}}
+      </mat-checkbox>
+    </div>
+  </section>
+
+  <section class="example-section">
+    <h4>What type of POIs:</h4>
+    <mat-select [(value)]="data.poiTypeSelected">
+      <mat-option *ngFor="let poi of data.poiTypes" [value]="poi">
+        {{poi}}
+      </mat-option>
+    </mat-select>
+  </section>
+
+  <section class="example-section">
+    <h4>Select POI with the highest...</h4>
+    <mat-select [(value)]="data.poiSortSelected">
+      <mat-option *ngFor="let sortType of data.poiSort" [value]="sortType">
+        {{sortType}}
+      </mat-option>
+    </mat-select>
+  </section>
+
+  <section class="example-section">
+    <h4>How many top POIs per word type?</h4>
+    <mat-form-field class="example-full-width">
+      <input type="number" matInput [(ngModel)]=data.count />
+    </mat-form-field>
+  </section>
+
+  <mat-dialog-actions align="end">
+    <button mat-raised-button (click)="onNoClick()">Close</button>
+    <button
+      mat-raised-button
+      color="primary"
+      [mat-dialog-close]="data"
+      cdkFocusInitial
+    >
+      Ok
+    </button>
+  </mat-dialog-actions>
+</div>

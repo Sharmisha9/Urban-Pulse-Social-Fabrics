@@ -1,0 +1,24 @@
+node yelp_data.js
+
+node get_unique.js -> to get coords lb, rt
+
+
+./build/Scalars --input ./yelp_indianapolis.csv --name yelp --space 0 1 --time 2 --bound 39.60454 -86.388932 39.9763814 -85.9399517492 --timezone UTC --output ../vis/src/data/indiana_polis
+
+./build/Scalars --input ./yelp_philadelphia.csv --name yelp --space 0 1 --time 2 --bound 39.86492399 -75.4123097468 40.1498909 -74.8937988281 --timezone UTC --output ../vis/src/data/philadelphia
+
+./build/Scalars --input ./yelp_tucson.csv --name yelp --space 0 1 --time 2 --bound 32.0149212 -111.245852 32.5496445 -110.661327 --timezone UTC --output ../vis/src/data/tucson
+
+./build/Scalars --input ./yelp_tampa.csv --name yelp --space 0 1 --time 2 --bound 27.7346248 -82.771618 28.186366 -82.2545029165 --timezone UTC --output ../vis/src/data/tampa
+
+./build/Scalars --input ./yelp_nashville.csv --name yelp --space 0 1 --time 2 --bound 37.9212585 -86.9918397 39.6614312926 -86.3936841544 --timezone UTC --output ../vis/src/data/nashville
+
+./Pulse --name yelp --data ../../vis/src/data/indiana_polis/ --combine
+
+./Pulse --name yelp --data ../../vis/src/data/philadelphia/ --combine
+
+./Pulse --name yelp --data ../../vis/src/data/tucson/ --combine
+
+./Pulse --name yelp --data ../../vis/src/data/tampa/ --combine
+
+./Pulse --name yelp --data ../../vis/src/data/nashville/ --combine

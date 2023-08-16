@@ -1,0 +1,4 @@
+Family:Child,Daughter,Son,Parent,Mother,Father,Brother,Sister,Siblings,Aunt,Uncle,Niece,Nephew,Cousin,Grandchild,Grandmother,Grandfather,Grandparents
+Romantic:Partner,Relationship,Date,Boo,Fiancee,Girlfriend,Boyfriend,Spouse,Husband,Wife
+Friendship:BFF,Friend,Housemate,Neighbor
+Professional:Classmate,Professor,Teacher,Coworker,Client,Boss
