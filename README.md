@@ -1,4 +1,6 @@
-# Capturing Urban Pulses and its Social Fabrics - https://upsf.psharmisha.com/?data1=data/philadelphia,yelp,none
+# Capturing Urban Pulses and its Social Fabrics
+
+https://upsf.psharmisha.com/?data1=data/philadelphia,yelp,none
 
 Urban areas are complex and dynamic environments, constantly changing and evolving over time. As cities grow and change, they present a range of challenges for city planners, architects, and human behavioral experts to understand and navigate. Recent advancements in technology have enabled the collection and analysis of vast amounts of data, providing new opportunities to gain insights into the dynamics of urban environments.
 
